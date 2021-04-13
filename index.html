@@ -11,58 +11,131 @@
         font-family: system-ui;
       }
 
-      .Nav{
+      .navbar {
+        overflow: hidden;
         background-color: rgb(48, 48, 48);
         color: rgb(200, 210, 222);
       }
 
-      a:link{
-        color: rgb(255, 255, 255)
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+       }
+
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(179, 116, 80);
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+       background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+       display: block;
       }
 
       .Header{
         background-color: rgb(208, 231, 255);
+        padding: 16px 18px;
+        border: 1px  solid grey;
         font-family: fantasy;
         font-size: 28px;
         text-align: center;
-        margin: 5px;
       }
 
       .LeftC{
         background-color: rgb(222, 203, 200);
         width: 15%;
-        height: 600px;
+        height: 800px;
         float: left;
         border: 1px  solid grey;
-				margin: 10px;
+				margin: 8px;
+      }
+
+      .LeftC a:link{
+        color: rgb(4, 131, 212);
+      }
+
+      .LeftC a:visited{
+        color: rgb(72, 84, 92);
+      }
+
+      .LeftC a:hover{
+        background-color: rgb(200, 169, 252);
+      }
+
+      .LeftC a:active{
+        background-color: rgb(128, 99, 166)
       }
 
       .MiddleC{
-        background-color: rgb(232, 250, 180);
+        background-color: rgb(208, 248, 186);
         width: 50%;
-        height: 600px;
+        height: 800px;
         float: left;
         overflow: auto;
         border: 1px  solid grey;
-				margin: 10px;
+				margin: 8px;
       }
 
       .RightC{
-        background-color: rgb(215, 252, 239);
-        width: 28%;
-        height: 600px;
+        background-color: rgb(200, 218, 258);
+        width: 30%;
+        height: 800px;
         border: 1px solid grey;
         float: left;
-        margin: 10px;
+        margin: 8px;
       }
 
       .Footer{
         background-color: rgb(48, 48, 48);
         color: rgb(200, 210, 222);
 				margin: 10px;
+        padding: 8px 10px;
         text-align: center;
         float: left;
-        width: 100%;
+        width: 97%; 
+      }
+
+      .Footer a:link{
+        color: rgb(255, 255, 255);
       }
 
       #picture{
@@ -75,28 +148,38 @@
 	</head>
 
 	<body>
-		<div class="Nav">
+		<div class="navbar">
 				<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> Festivals and Events </a>
 				<a href="https://www.tourismpei.com/about-pei" target="_blank"> About PEI </a>
-				Planning a Trip:  <!-- make into a drop down -->
-					<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
-					<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
-					<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
-		</div>  <!-- end of navigation bar -->
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+					   <a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
+				     <a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
+				     <a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
+          </div>
+        </div>     
+	  </div>  <!-- end of navigation bar -->
 		
 		
 		<div class="Header">
 			My Favourite Beaches
 		</div>  <!-- end of header --> 
-		
+
 		<div class="LeftC">
 			LINKS <br>  
 			<!-- Make Links into an unordered list -->
-			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a>
-			<a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a>
-			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a>
-			<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a>
-			<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a>
+			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> ~ 10 Quirky Things You Didn’t Know About PEI </a>
+      </br>
+			<a href="https://www.tourismpei.com/about-pei" target="_blank">~ Environment</a>
+      </br>
+			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">~ Getting Here</a>
+			</br>
+      <a href="https://www.tourismpei.com/pei-accommodations" target="_blank">~ Important Travel Information</a>
+			</br>
+      <a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">~ Island Webcams</a>
 		</div> <!-- end of left column -->
 
 		<div class="MiddleC">
