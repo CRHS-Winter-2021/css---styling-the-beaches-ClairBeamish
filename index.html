@@ -5,43 +5,199 @@
 			March 2020
 			Based upon: https://www.tourismpei.com/  -->
 			
-				
+		<style>
+      /*Presets*/
+      Body{
+        background-color: rgb(248, 238, 167);
+        font-family: Yu Gothic UI;
+      }
+
+      /*Navbar*/
+      .navbar {
+        overflow: hidden;
+        font-family: Century Gothic;
+        background-color: rgb(48, 48, 48);
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: rgb(172, 250, 208);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-family: Century Gothic;
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: rgb(172, 250, 208);
+        padding: 14px 16px;
+        background-color: inherit;
+       }
+
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(16, 130, 82);
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+       background-color: rgb(148, 148, 148);
+      }
+
+      .dropdown:hover .dropdown-content {
+       display: block;
+      }
+
+      /*Header*/
+      .Header{
+        background-color: rgb(208, 231, 255);
+        padding: 16px 18px;
+        border: 1px  solid grey;
+        font-family: Malgun Gothic;
+        font-size: 28px;
+        text-align: center;
+      }
+
+      /*Left*/
+      .LeftC{
+        background-color: rgb(222, 203, 200);
+        width: 15%;
+        height: 800px;
+        float: left;
+        border: 1px  solid grey;
+				margin: 8px;
+      }
+
+      .LeftC a:link{
+        color: rgb(4, 131, 212);
+      }
+
+      .LeftC a:visited{
+        color: rgb(72, 84, 92);
+      }
+
+      .LeftC a:hover{
+        background-color: rgb(200, 169, 252);
+      }
+
+      .LeftC a:active{
+        background-color: rgb(128, 99, 166);
+      }
+
+      /*Middle*/
+      .MiddleC{
+        background-color: rgb(208, 248, 186);
+        width: 50%;
+        height: 800px;
+        float: left;
+        overflow: auto;
+        border: 1px  solid grey;
+				margin: 8px;
+      }
+
+      .pic{
+        float: left;
+        border: 3px dashed lightblue;
+        margin: 6px;
+      }
+
+      /*Right*/
+      .RightC{
+        background-color: rgb(200, 218, 258);
+        width: 30%;
+        height: 800px;
+        border: 1px solid grey;
+        float: left;
+        margin: 8px;
+      }
+
+      /*Footer*/
+      .Footer{
+        background-color: rgb(48, 48, 48);
+        color: rgb(200, 210, 222);
+        padding: 8px 10px;
+        text-align: center;
+        float: left;
+        width: 98%; 
+      }
+
+      .Footer a:link{
+        color: white;
+      }
+
+      .Footer a:visited{
+        color: white;
+      }
+
+    </style>
 		<title>My Favourite Beaches</title>
 	</head>
 
 	<body>
-		<p >
+		<div class="navbar">
 				<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> Festivals and Events </a>
 				<a href="https://www.tourismpei.com/about-pei" target="_blank"> About PEI </a>
-				Planning a Trip:  <!-- make into a drop down -->
-					<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
-					<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
-					<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
-			
-		</p>  <!-- end of navigation bar -->
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+					   <a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
+				     <a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
+				     <a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
+          </div>
+        </div>     
+	  </div>  <!-- end of navigation bar -->
 		
 		
-		<p>
-			My Favourite Beaches
-			
-		</p>  <!-- end of header --> 
-		
-		
-		<p >
+		<div class="Header">
+			‿︵‿︵‿︵‿︵‿︵‿︵My Favourite Beaches‿︵‿︵‿︵‿︵‿︵‿︵
+		</div>  <!-- end of header --> 
+
+		<div class="LeftC">
 			LINKS <br>  
 			<!-- Make Links into an unordered list -->
-			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a>
-			<a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a>
-			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a>
-			<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a>
-			<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a>
-			
-		</p> <!-- end of left column -->
-		
-		
-		<p >
-			<img src="Media/beach1.jpg" alt="Beautiful beach" width = "200px"> 
-			
+			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> ~ 10 Quirky Things You Didn’t Know About PEI </a>
+      </br>
+			<a href="https://www.tourismpei.com/about-pei" target="_blank">~ Environment</a>
+      </br>
+			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">~ Getting Here</a>
+			</br>
+      <a href="https://www.tourismpei.com/pei-accommodations" target="_blank">~ Important Travel Information</a>
+			</br>
+      <a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">~ Island Webcams</a>
+		</div> <!-- end of left column -->
+
+		<div class="MiddleC">
+    <div class="pic">
+		<img src="Media/beach1.jpg" alt="Beautiful beach" width = "100%"> 
+		</div>
 			ABOUT OUR BEACHES <br>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
 			<br>
@@ -68,24 +224,20 @@
 			<br>
 			Others dream of returning. "PEI is the most beautiful, clean province we have seen, and the beaches are something us in Alberta only see in pictures," says Lori from Edmonton. Lori says she'll return for another PEI vacation soon. Such is the draw of PEI's beautiful beaches. And one thing is certain - she won't be alone.
 			
-		</p> <!-- end of center column -->
+		</div> <!-- end of center column -->
 		
 		
-		<p >
+		<div class="RightC">
 			On our Island province you are never far from the ocean and one of our numerous spectacular beaches. From the red sand beaches on the south shore to the white sand beaches on the north shore, Prince Edward Island offers a variety of unique and enjoyable beach experiences
 			<img src="Media/riptide.jpg" width = "200px" alt ="Riptide Info">
 			<br>
 			Swimming in the ocean is very different from swimming in a pool or lake. The strength and force of even small ocean waves can surprise beach goers who are unfamiliar with the power of the sea. When particular surf conditions are present at some of our beaches, rip currents can occur.
-			
-			
-			
-		</p> <!-- end of right column -->
-		
-				
-		<p >
+		</div> <!-- end of right column -->
+
+		<div class="Footer">
 		   <a href="https://www.tourismpei.com/contact-us-page" target = "_blank" >Contact Us </a> 	
 		   2020 Prince Edward Island Tourism. All Rights Reserved.
-		</p> <!-- end of footer -->
+		</div> <!-- end of footer -->
 				
 	</body>
 
